@@ -8,9 +8,11 @@ function createTable() {
 		return;
    }
 	if(row === null ||  Number.isNaN(row)){
+		alert("Invalid input");
 		return;
 	}
 	if(column === null ||  Number.isNaN(column)){
+		alert("Invalid input");
 		return;
 	}
 	table.innerHTML="";
