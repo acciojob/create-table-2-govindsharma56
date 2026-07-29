@@ -7,7 +7,7 @@ function createTable() {
 		alert('cannot create table');
 		return;
    }
-	if(row === null ||  Number.isNan(row)){
+	if(row === null ||  Number.isNaN(row)){
 		return;
 	}
 	table.innerHTML="";
