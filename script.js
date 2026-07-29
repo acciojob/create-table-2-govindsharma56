@@ -7,7 +7,7 @@ function createTable() {
 		alert('cannot create table');
 		return;
    }
-	if(rows === null || rows.trim() === "" || Number.isNan(row)){
+	if(row === null || row.trim() === "" || Number.isNan(row)){
 		return;
 	}
 	table.innerHTML="";
