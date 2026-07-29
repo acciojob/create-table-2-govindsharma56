@@ -3,11 +3,14 @@ function createTable() {
 	let table=document.querySelector('#myTable');
 	let row=Number(prompt('Input number of rows'));
 	let column=Number(prompt('Input number of columns'));
-	if(row<=0){
+	if(row<=0 || column <= 0){
 		alert('cannot create table');
 		return;
    }
 	if(row === null ||  Number.isNaN(row)){
+		return;
+	}
+	if(column === null ||  Number.isNaN(column)){
 		return;
 	}
 	table.innerHTML="";
